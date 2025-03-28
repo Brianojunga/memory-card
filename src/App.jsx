@@ -36,10 +36,7 @@ function App() {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Network error was encountered</p>;
 
-  
-  return (
-    <DisplayPokemon pokemons={pokemons} setFunction={setPokemons}/>
-  );
+  return <DisplayPokemon pokemons={pokemons} setFunction={setPokemons} />;
 }
 
 export default App;
